@@ -1,0 +1,109 @@
+.shoe-section {
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  height: 110vh;
+  width: 100%;
+}
+
+.shoe-image-container {
+  align-self: baseline;
+  height: 80%;
+  width: 40%;
+}
+
+.shoe-image-container img {
+  border-radius: 15px;
+  height: 100%;
+  width: 100%;
+}
+
+.shoe-content-container {
+  padding: 3rem;
+  height: 100%;
+  width: 40%;
+}
+
+.shoe-content-name,
+.shoe-content-price {
+  text-transform: capitalize;
+  font-size: 2.5rem;
+}
+
+.shoe-content-color {
+  text-transform: capitalize;
+  font-size: 1.7rem;
+  font-weight: 400;
+}
+
+.shoe-content-description {
+  font-size: 1.7rem;
+  font-weight: 400;
+  line-height: 1.3;
+}
+
+.shoe-content-sub {
+  cursor: pointer;
+  margin: 2rem;
+}
+
+.shoe-content-subtitle {
+  text-transform: uppercase;
+  font-size: 1.7rem;
+  margin: 1rem 0;
+}
+
+.shoe-content-button {
+  height: 4.5vh;
+  width: 100%;
+}
+
+.shoe-content-button {
+  background-color: var(--background-secondary);
+  font-family: var(--trekCare-font-family);
+  border-radius: 10px;
+  font-size: 1.7rem;
+  margin: 2rem 0;
+  color: white;
+  height: 4rem;
+  border: none;
+  width: 100%;
+}
+
+.shoe-content-button:hover {
+  filter: brightness(1.5);
+  cursor: pointer;
+}
+
+/* -------------- */
+/* Responsiveness */
+/* -------------- */
+
+@media screen and (max-width: 768px) and (min-width: 412px) {
+  .shoe-image-container {
+    align-self: baseline;
+    margin-top: 9rem;
+    height: 50%;
+    width: 40%;
+  }
+}
+
+@media screen and (max-width: 412px) {
+  .shoe-section {
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    padding: 0 1rem;
+    height: 100%;
+  }
+  .shoe-content-container {
+    width: 100%;
+  }
+  .shoe-image-container {
+    align-self: baseline;
+    align-self: center;
+    margin-top: 9rem;
+    height: 80%;
+    width: 80%;
+  }
+}
